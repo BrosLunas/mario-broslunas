@@ -245,8 +245,8 @@ function setAreaPreCreation(area) {
   startDataTime();
   
   if(map.random) {
-    data.world.amount = "Random Map";
-    data.world.element.innerHTML = "WORLD<br>Random Map";
+    data.world.amount = "Mundo Aleatorio";
+    data.world.element.innerHTML = "Mundo<br>Mapa Aleatorio";
   }
 }
 function clearTexts() {
@@ -1124,11 +1124,11 @@ function World11(map) {
       greeter += "</div>";
       greeter += "<div id='boo' style='text-align:right;color:#ffcccc;margin-top:-7px;width:350px;height:35px;'>&copy;1985 NINTENDO</div>";
       greeter += "<p id='explanation' style='text-align:center;<!--/*text-shadow:2px 2px 1px black;*/-->margin-left:7px;'>";
-      greeter += "  Move: Arrows/WASD";
+      greeter += "  Movimiento: Flechas/WASD";
       greeter += "  <br>";
-      greeter += "  Fire/Sprint: Shift/CTRL";
+      greeter += "  Disparar/Correr: Shift/CTRL";
       greeter += "  <br>";
-      greeter += "  Pause/Mute: P/M ";
+      greeter += "  Pausar/Mutear: P/M ";
       // greeter += "  <br>";
       // greeter += "  TOP- " + (localStorage.highscore || "000000");
       greeter += "</p>";

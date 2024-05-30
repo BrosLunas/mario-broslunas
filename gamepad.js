@@ -336,7 +336,7 @@
 		PLAYSTATION: 'playstation',
 		LOGITECH: 'logitech',
 		XBOX: 'xbox',
-		UNKNOWN: 'unknown'
+		UNKNOWN: 'desconocido'
 	};
 
 	/*

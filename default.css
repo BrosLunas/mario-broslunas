@@ -15,7 +15,6 @@ body {
   position: absolute;
   height: 49px;
   width: 100%;
-	background-image:url('Theme/Header.gif');
 	background-repeat:no-repeat;
 	background-color:#070707;
 }

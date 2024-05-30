@@ -65,7 +65,7 @@ function setMapSelector(timed) {
       innerHTML += createAdderMap(i, j);
   
   // Add that HTML to #in_mapselect, along with a big one for random maps
-  elemSelect.innerHTML += innerHTML + createAdderBigMap("Map Generator!", "setGameMapRandom");
+  elemSelect.innerHTML += innerHTML + createAdderBigMap("Genera Tu Mapa!", "setGameMapRandom");
   
   // If this isn't local, actually responding to the game loading maps is doable
   // See load.js
@@ -77,7 +77,7 @@ function setMapSelector(timed) {
     var elem;
     for(i = 1; i <= 8; ++i)
       for(j = 1; j <= 4; ++j) {
-        if(game["World" + i + String(j)] && (elem = document.getElementById("maprect" + i + "," + j)))
+        if(game["Mundo" + i + String(j)] && (elem = document.getElementById("maprect" + i + "," + j)))
           elem.className = "maprect";
       }
   }
@@ -150,28 +150,28 @@ function setOptions() {
       options = [
         "Mute",
         "Luigi",
-        "FastFWD"
+        "Vel."
       ],
       innerHTML = "",
       option, i;
   for(i in options) {
     option = options[i];
-    innerHTML += "<div class='maprectout' onclick='toggleGame(\"" + option + "\")'><div class='maprect big larger'>Toggle " + option + "</div></div>";
+    innerHTML += "<div class='maprectout' onclick='toggleGame(\"" + option + "\")'><div class='maprect big larger'>Alternar " + option + "</div></div>";
     innerHTML += "<br />";
   }
-  out.innerHTML += innerHTML + "<br />More coming soon!";
+  out.innerHTML += innerHTML + "";
 }
 
 // Fills the keys mapping menu with div and input to change the keys
 function setKeyMappingMenu() {
   var out = document.getElementById("in_keymapping"),
       keys = [
-        "Up",
-        "Down",
-        "Left",
-        "Right",
-        "Sprint",
-		"Pause",
+        "Arriba",
+        "Abajo",
+        "Izq.",
+        "Der.",
+        "Correr",
+		"Pausa",
 		"Mute"
       ],
       innerHTML = "", key, low, i;
