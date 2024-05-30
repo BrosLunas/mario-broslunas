@@ -132,9 +132,9 @@ function setGameMapRandom() {
 
 function setLevelEditor() {
   var out = document.getElementById("in_editor"),
-      blurb = "Why use Nintendo's?<br />";
-  button = createAdderBigMap("Make your<br />own levels!", "startEditor", true);
-  out.innerHTML += blurb + button + "<br />You can save these as text files when you're done.";
+      blurb = "";
+  button = createAdderBigMap("!Crea tus<br />niveles!", "startEditor", true);
+  out.innerHTML += blurb + button + "<br />Puedes guardarlos como archivos de texto cuando hayas terminado.";
 }
 
 function startEditor() {

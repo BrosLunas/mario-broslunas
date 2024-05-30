@@ -471,10 +471,10 @@ function editorScrolling(dx) {
 // Guidelines display helpful boundaries
 function createEditorGuideLines() {
   var lines = {
-      floor: 0,
-      ceiling: ceillev,
-      jumplev1: jumplev1,
-      jumplev2: jumplev2
+      suelo: 0,
+      cielo: ceillev,
+      saltar1: jumplev1,
+      saltar2: jumplev2
     },
     left = 16 * unitsize + "px",
     floor = map.floor,
@@ -996,8 +996,8 @@ function editorControlSave() {
   
   // Display the input/submission window to the user
   var rawfunc = editor.rawfunc = editorGetRawFunc(),
-      title = "<span style='font-size:1.4em;'>Hit Submit below to start playing!</span>",
-      p = "<p style='font-size:.7em;line-height:140%'>This map will be resumed automatically the next time you use the editor on this computer.<br>Alternately, you may copy this text to work on again later using Load (the button next to Save). </p>",
+      title = "<span style='font-size:1.4em;'>¡Presiona Enviar a continuación para comenzar a jugar!</span>",
+      p = "<p style='font-size:.7em;line-height:140%'>Este mapa se reanudará automáticamente la próxima vez que utilice el editor en esta computadora.<br>Alternativamente, puede copiar este texto para trabajar nuevamente en él más tarde usando Cargar (el botón al lado de Guardar). </p>",
       menu = editorCreateInputWindow(title + "<br>" + p, rawfunc, editorSubmitGameFuncPlay);
   
   return rawfunc;
@@ -1208,13 +1208,13 @@ function editorCreateInputWindow(blurb, value, callback) {
       submit = div.submit = createElement("div", {
         id: "window_submit",
         className: "window_button",
-        innerText: "Submit",
+        innerText: "Enviar",
         onclick: callback
       }),
       cancel = div.cancel = createElement("div", {
         id: "window_cancel",
         className: "window_button",
-        innerText: "Cancel",
+        innerText: "Cancelar",
         onclick: editorCloseInputWindow
       });
   
